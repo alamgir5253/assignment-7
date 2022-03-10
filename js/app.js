@@ -51,6 +51,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+  console.log(post)
     const image = post.image;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
@@ -133,6 +134,7 @@ const createPost = (post) => {
 };
 
 const showPosts = (posts) => {
+  console.log(posts)
     const productsContainer = document.getElementById( "posts" );
     productsContainer.innerHTML = "";
 
@@ -153,14 +155,17 @@ const displayLikedPosts = () => {
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
     posts.forEach((post) => {
+console.log(posts)
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
 };
 
 const loadPosts = async () =>{
-  let data = await fetch('../data/posts.json');
-  posts = await data.json();
+
+  let data = await fetch('data/posts.json');
+  // console.log(data)
+  data = await data.json();
   showPosts(posts);
 }
 
