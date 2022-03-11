@@ -256,3 +256,8 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* bonus section start  */
+.answer-section{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr) ;}
