@@ -269,3 +269,9 @@ img {
   margin: 0 20px;
   border-radius: 10px;
 }
+footer{
+  background: #000;
+  padding: 40px 0 ;
+  color: aliceblue;
+  text-align: center;
+}
