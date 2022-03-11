@@ -260,4 +260,12 @@ img {
 /* bonus section start  */
 .answer-section{
   display: grid;
-  grid-template-columns:repeat(3, 1fr) ;}
+  grid-template-columns:repeat(2, 1fr);
+  margin: 50px auto;
+}
+.answer,.answer-3{
+  box-shadow: 0 0 10px #333;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 10px;
+}
