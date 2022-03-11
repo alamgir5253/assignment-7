@@ -263,15 +263,22 @@ img {
   grid-template-columns:repeat(2, 1fr);
   margin: 50px auto;
 }
-.answer,.answer-3{
+.answer,.answer-2{
   box-shadow: 0 0 10px #333;
   padding: 10px;
   margin: 0 20px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 footer{
   background: #000;
   padding: 40px 0 ;
   color: aliceblue;
   text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .answer-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
